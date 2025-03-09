@@ -23,7 +23,7 @@ section {
   scroll-margin-top: 110px; /* Adjust to the height of your header or any offset you want */
 }
 
-header, .hero, .about, .skill {
+.hero, .about, .skill, .experience, .projects, .certification{
   opacity: 0; 
   animation: fadeInSlideUp 1.5s ease forwards; 
 }
@@ -459,6 +459,10 @@ main {
 .python {
   width: 45%;
   animation: python 3s;
+}
+.javascript {
+  width: 40%;
+  animation: javascript 3s;
 }
 
 /**************************************** GPT *******************************************************/
@@ -1058,7 +1062,7 @@ main {
   .skills-section .skill {
     flex: 1 1 26%;
     max-width: 50%;
-    height: 160px;
+    height: 180px;
   }
 
   /* Adjust the title font size for mobile */
@@ -1084,6 +1088,9 @@ main {
   padding: 20px 0;
   font-family: "Space Grotesk", sans-serif;
   margin-top: 80px;
+}
+#footer:target {
+  border-top: 5px solid #25ab75; /* Green stroke */
 }
 
 .footer .container {
@@ -1217,6 +1224,15 @@ main {
 
   100% {
     width: 45%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 40%;
   }
 }
 
